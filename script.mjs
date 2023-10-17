@@ -27,6 +27,5 @@ function clearIfEmpty(currentFieldId, otherFieldId) {
 
     if (currentField.value === "") {
         otherField.value = "";
-        // document.getElementsByClassName("result").innerHTML = "";
     }
 }
