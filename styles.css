@@ -22,19 +22,28 @@
     margin-top: 20px;
 }
 
-.input-display{
+.input-display {
     display: flex;
     height: 70px;
     width: 40%; 
 
 }
-
-.input-display>input{
-    margin-right: 10px;
+.input-display> div{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    align-items: center;
 }
 
-.input-display>input{    
+.input-display input{
+    margin-right: 10px;
+   
+}
+
+.input-display input{    
     margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 1.2rem;
 }
 
 .button button{
