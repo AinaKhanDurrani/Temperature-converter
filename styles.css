@@ -28,9 +28,15 @@
     width: 40%; 
 
 }
-.input-display> div{
+.input-display  div{
     display: flex;
     flex-direction: column;
+    height: 50px;
+    align-items: center;
+}
+
+.input-display > form{
+    display: flex;
     height: 50px;
     align-items: center;
 }

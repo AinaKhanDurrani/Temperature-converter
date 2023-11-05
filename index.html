@@ -14,14 +14,18 @@
         <h1>Temperature Converture</h1>
         <div class="temp-converter">
             <div class="input-display">
-                <div><label for="fah">Fahrenhiet</label>
-                    <input type="text" placeholder=" 0°F" id="fah" oninput="clearIfEmpty('fah', 'cel')" ></div>
-               <div> <label for="cel">Celcius</label>
-                <input type="text" placeholder="0°C" id="cel" oninput="clearIfEmpty('cel', 'fah')" >
-</div>
+                <form>
+                    <div><label for="fah">Fahrenhiet</label>
+                        <input type="text" placeholder=" 0°F" onkeydown="if (event.key === 'Enter') { myconvert(); }" id="fah" onsubmit="convert()" oninput="clearIfEmpty('fah', 'cel')">
+                    </div>
+                    <div> <label for="cel">Celcius</label>
+                        <input type="text" placeholder="0°C" onkeydown="if (event.key === 'Enter') { myconvert(); }" id="cel" onsubmit="convert()" oninput="clearIfEmpty('cel', 'fah')">
+                    </div>
+                    
+                </form>
             </div>
             <div class="button">
-                <button onclick="convert()" >Convert</button>
+                <button onclick="convert()">Convert</button>
             </div>
         </div>
     </div>

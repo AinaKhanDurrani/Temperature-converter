@@ -1,7 +1,11 @@
 let fahInput = document.getElementById("fah");
 let celInput = document.getElementById("cel");
 
-
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        convert();
+ }});
+ 
 function convert() {
     if (celInput.value !== "") {
         to_fahrenheit();
