@@ -65,3 +65,7 @@
     background-color: rgb(255, 167, 3);
     box-shadow: 2px 2px 5px rgba(224, 159, 39,.5);
 }
+
+div> label{
+    margin-bottom: 5px;
+}
